@@ -1,0 +1,387 @@
+html {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #0082cd;
+    background-image: linear-gradient(#0082cd, #66c7ff);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar Styling*/
+.navBar {
+   background-color: #66B032;
+   width: 101%;
+   height: 7em;
+   border: 4px solid #66B032;
+   display: flex;
+   margin: -1%;
+   margin-bottom: 2%;
+}
+
+.userInfo {
+    position: fixed;
+    right: 1em;
+    background-color: #518b27;
+    border-radius: 1em;
+    width: 7em;
+    text-align: center;
+    display: flex;
+    margin: 0;
+    cursor: pointer;
+}
+
+.userInfo i {
+    margin-top: 13%;
+    margin-right: 5%;
+    margin-left: 8%;
+}
+.navButtonContainer {
+    width: 100%;
+    margin: auto;
+    display: flex;
+
+}
+
+.navButton {
+    width: 20%;
+    height: 4vw;
+    margin: auto;
+    background-color: #66B032;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-family: "oswald";
+    transition: .3s;
+}
+
+.navButton h1 {
+    margin: auto;
+    margin-top: 4%;
+
+}
+
+#active-page {
+    color: #0082cd;
+
+}
+
+
+/* Add the transition effect to the buttons */
+.navButton:hover {
+    border-bottom: .5vw solid #0082cd;
+    color: #0082cd;
+}
+
+/* Table Styling */
+#table {
+    margin: auto;
+    margin-top: 5px;
+    width: 95%;
+    font-family: "Lucida Console";
+    background-color: white;
+}
+
+#table td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    width: 18.5%;
+    
+}
+
+#table tr:nth-child(even) {
+    background-color: #d9d9d9;
+}
+
+#table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+#in {
+    background-color: #66B032;
+    color: white;
+}
+
+#out {
+    background-color: #FCCB1A;
+}
+
+#maintenance {
+    background-color: #E8212F;
+    color: white;
+}
+
+#table th {
+    /* background-color: #699b4a; */
+    background-color: #808080;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* End of Table Styling */
+
+/* Login Page Styling */
+#login-page body {
+    padding-top: 100px;
+}
+
+#login-title {
+    color: white;
+    font-family: "oswald";
+    text-align: center;
+}
+
+#login-form {
+    border-style: solid;
+    border-color: white;
+    border-radius: 8px;
+    margin: auto;
+    width: 45%;
+    text-align: center;
+    background-color: white;
+}
+
+#login-form h1{
+    font-family: "oswald";
+}
+
+#login-form input {
+    font-family: "Lucida Console";
+    border: none;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+#login-submit {
+    width: 100%;
+    background-color: #4F892A;
+    color: white;
+    cursor: pointer;
+    border-color: white;
+    border-style: solid;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.3s;
+    font-family: "Lucida Console";
+}
+
+#login-submit:hover {
+    background-color: #70c33c;
+}
+/* End of Login Page Styling */
+
+/* Add Equpiment Page */
+#table input {
+    width: 97%;
+}
+
+#table select {
+    width: 98%;
+}
+
+#table button {
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* End of Add Equipment Page */
+/* End of Login Page Styling */
+
+/* Add Equpiment Page */
+#table input {
+    width: 97%;
+}
+
+#table select {
+    width: 98%;
+}
+
+#table #equipment-btn {
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/* End of Add Equipment Page */
+
+/* Manage Users Page */
+.reset-btns {
+    width: 100%;
+    display: flex;
+}
+
+.reset-btns button {
+    background-color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.3s;
+    width: 48%;
+} 
+
+.reset-btns button:hover {
+    background-color: #db1f2b;
+    color: white;
+} 
+
+#reset-password:hover {
+    background-color: #0082cd;
+}
+
+/* End of Manage Users Page */
+
+/* Reset/Delete Modal */
+.modal {
+    visibility: hidden;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    border-radius: 8px;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 45%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal h1 {
+    font-family: "oswald";
+    text-align: center;
+}
+.modal p {
+    text-align: center;
+    font-family: "Arial";
+}
+
+.modal form {
+    margin-left: 35%;
+    margin-right: 35%
+}
+
+.modal input {
+    width: 100%;
+    font-family: "Lucida Console";
+    border: none;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+.modal button {
+    width: 100%;
+    background-color: #4F892A;
+    color: white;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Lucida Console";
+}
+
+.modal button:hover {
+    background-color: #70c33c;
+}
+
+.modal select {
+    font-family: "Arial";
+    width: 100%;
+}
+/* End of Reset/Delete Modal */
+
+/* Create new user */
+#new-user-btn {
+    float: right;
+    background-color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.3s;
+    width: 48%;
+    margin-right: 4px;
+}
+
+#new-user-btn:hover {
+    background-color: #66b032;
+    color: white;
+}
+/* End of create new user */
+
+ /* Pop-Up Windows */
+#windBack {
+    display: block; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    transition: opacity .3s;
+    opacity: 1;
+    z-index: 5;
+}
+
+#loginErr {
+    text-align: center;
+    border: 2px solid #ff3333;
+    border-radius: 1vw;
+    width: 20vw;
+    background: white;
+    position: absolute;
+    left: 40vw;
+    top: 20vw;
+}
+
+x {
+    cursor: pointer;
+
+}
+
+#userInfo {
+    text-align: center;
+    border: 2px solid #66b032;
+    border-radius: 1vw;
+    width: 20vw;
+    background: white;
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: .3s;
+}
+
+.x {
+    position: relative;
+    left: -40%;
+    top: 100%;
+    cursor: pointer;
+}

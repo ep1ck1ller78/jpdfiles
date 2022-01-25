@@ -1,0 +1,97 @@
+.userInfo {
+    width: 10%;
+    height: 10%;
+    background-color: hsl(120, 100%, 30%);;
+}
+
+/* Navbar Styling*/
+
+.navBar {
+   background-color: #4F892A;
+   width: 98%;
+   height: 5em; 
+   border-radius: 1em;
+   border: 4px solid #4F892A;
+   display: flex;
+   margin-top: 3%;
+}
+
+.navButtonContainer {
+    width: 100%;
+    margin: auto;
+    display: flex;
+
+}
+
+.navButton {
+    width: 20%;
+    height: 4vw;
+    margin: auto;
+    background-color: #4F892A;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-family: "oswald";
+    transition: .3s;
+}
+
+
+.navButton h1 {
+    margin: auto;
+    margin-top: 4%;
+
+}
+
+/* Add the transition effect to the buttons */
+
+.navButton:hover {
+    border-bottom: .5vw solid blue;
+}
+
+
+/* Table Styling */
+#table {
+    width: 100%;
+    font-family: "Lucida Console";
+}
+
+#table td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    width: 33.33%;
+}
+
+#table tr:nth-child(even) {
+    background-color: #d9d9d9;
+}
+
+#table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+#in {
+    background-color: #66B032;
+    color: white;
+}
+
+#out {
+    background-color: #FCCB1A;
+}
+
+#maintenance {
+    background-color: #E8212F;
+    color: white;
+}
+
+#table th {
+    /* background-color: #699b4a; */
+    background-color: #808080;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+/* End of Table Styling */
